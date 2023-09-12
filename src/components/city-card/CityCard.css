@@ -1,0 +1,28 @@
+.city-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    color: black;
+}
+
+.city-card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    position: relative;
+}
+
+.city-card-text{
+    position: relative;
+    z-index: 1;
+}
+
+.city-card-image{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    border-radius: 25px;
+}

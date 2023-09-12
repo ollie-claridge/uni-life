@@ -1,0 +1,107 @@
+.title{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/assets/overlay.png);
+    height: 400px
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+}
+
+.title h2{
+    font-size: 20px;
+}
+
+.search-city{
+    padding-top: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    height: 30px;
+    margin-bottom: 70px;
+    position: relative;
+    top: 130px;
+    display: flex;
+    width: 700px;  /********/
+}
+
+.search-city-bubble{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: white;
+    
+}
+
+.search-city-btn{
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: lightblue;
+    width: 20%;
+    cursor: pointer;
+    height: 20px;
+}
+
+.search-city-bar{
+    width: 80%;
+    display: flex;
+    border-radius: 2px;
+    border: 1px solid gray;
+    height: 20px;
+}
+
+.backround-image{
+    background-image: url(/src/assets/sources/overlay.png);
+    background-position: center;
+    background-size: cover
+}
+
+.title{
+    color: white;
+}
+
+.title2{
+    margin-top: 50px;
+}
+
+.city-options-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.see-all-btn{
+    text-align: center;
+    background-color: rgb(82, 82, 179);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+
+.see-all-btn-container{
+    text-align: center;
+    
+}
+
+.compare-box-grid{
+    display: flex;
+    justify-content: space-around;
+}
+
+.compare-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
