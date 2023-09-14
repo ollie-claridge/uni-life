@@ -30,6 +30,7 @@
     position: relative;
     display: flex;
     top: 130px;
+    width: 100%;
 }
 
 .search-input-container{
@@ -47,17 +48,17 @@
 
 .search-city-btn{
     margin-left: 10px;
-    background-color: white;
+    color: white;
     border-radius: 5px;
     border: none;
-    background-color: lightblue;
-    width: 200px;
+    background-color: #3A5295;
+    width: 400px;
     cursor: pointer;
     height: 20px;
 }
 
 .search-city-bar{
-    width: 80%;
+    width:900px;
     border-radius: 2px;
     border: 1px solid gray;
     height: 20px;

@@ -1,4 +1,27 @@
-.Footer{
+.socials-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #00A2E1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.social-input{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: #CED3D8;
+}
+
+.keep-in-touch{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+
+.banner{
     display: flex;
     background-color: black;
     color: #FFFFFF99;
@@ -19,3 +42,4 @@
     width: 15%;
 
 }
+
