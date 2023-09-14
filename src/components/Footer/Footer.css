@@ -1,0 +1,21 @@
+.Footer{
+    display: flex;
+    background-color: black;
+    color: #FFFFFF99;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    padding: 30px;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.stamps{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    width: 15%;
+
+}
