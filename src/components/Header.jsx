@@ -1,18 +1,72 @@
 import React from 'react'
+import Modal from 'react-modal'
 import './Header.css'
 import {Link} from 'react-router-dom'
 import logo from '../assets/uni-life-logo.png'
 import shortlist from '../assets/shortlist.png'
 import contactUs from '../assets/contact-us.png'
 
+
+
+const customStyles = {
+content: {
+top: 200,
+right: 'auto' ,
+bottom: 'auto' ,
+
+},}
+
+
+
 function Header() {
+
+  const [isOpen, setIsOpen] = React.useState(false)
+
+
   return (
     <div className='header'>
     <div className='header-title'>
         <Link to="/" className='homepage-logo'><img src={logo} alt="logo" /></Link></div>
         <div className='header-nav'>
             <Link to="/Short-list"><img src={shortlist} alt="shortlist"/></Link>
-            <Link to="/contact"><img src={contactUs} /></Link>
+           
+           <button className="contact-btn"
+                onClick={()=>setIsOpen(true)}>
+
+                 <img src={contactUs} /> 
+
+                </button>
+           <Modal
+        isOpen={isOpen}
+        onRequestClose={()=>setIsOpen(false)}
+        style={customStyles}
+        contentLabel="Contact Us Modal"
+        >
+          <div className="contact-modal-header">
+            <h2>Contact Us</h2>
+            <p>Feel free to contact us if you have any questions. Looking forward to hear from you.</p>    
+        </div>
+        <form>
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" />
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" />
+
+        <label htmlFor="O">Are you are...?</label>
+    <select id="occupation">
+    <option value="Student">Student</option>
+    <option value="Teacher">Teacher</option>
+    <option value="Other">Other</option>
+  </select>
+
+         
+          <label htmlFor="Phone Number">Phone number</label>
+          <input type="number" id="number" />
+          <label htmlFor="message">Message</label>
+          <textarea id="message" rows="4"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </Modal>
       </div>
     
   </div>

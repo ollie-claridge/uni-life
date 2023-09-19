@@ -4,6 +4,7 @@
     align-items: center;
     width: 30%;
     color: black;
+    background-image: url(city.image_url);
 }
 
 .city-card-container{
@@ -17,7 +18,6 @@
 
 .city-card-text{
     position: relative;
-    z-index: 1;
 }
 
 .city-card-image{

@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Homepage.css'
 import axios from 'axios'
 import CityCard from '../../city-card/CityCard'
+import SeeAllCitiesPage from './SeeAllCitiesPage/SeeAllCitiesPage'
+import Slider from '../../Slider/Slider'
 
 function Homepage() {
 
@@ -11,7 +14,7 @@ function Homepage() {
 
     ()=>{
       console.log ('axios working')
-      axios.get(`https://unilife-server.herokuapp.com/cities`)
+      axios.get(`https://unilife-server.herokuapp.com/cities?limit=9`)
       .then(res => {
         console.log(res.data.response)
       //storing the data in state
@@ -28,23 +31,7 @@ function Homepage() {
 
   return (
   <div className='background-image'>
-    <div className='main'>
-    <div className='title'>
-              <h1 className='Title'>Find student homes with bills included</h1>
-              <h2 className='secondTitle'>A simple and faster way to find student accomodation</h2>
-    
-
-      <div className='search-city'>
-        <div className='search-city-bubble'>
-          <div className='search-input-container'>
-        <input type='text' placeholder='Search by city'className='search-city-bar'></input>
-        <button className='search-city-btn'>Find Homes</button>
-        </div></div>
-        </div>
-       
-        </div>
-         <h1 className='title2'>Student accomodation in our top cities</h1>
-      </div>
+  <Slider/>
       <div className='city-options-box'>
 
         {/* {cities.map(item=><p key={item.id}>{item.name}</p>)} */}
@@ -54,7 +41,7 @@ function Homepage() {
         }
       </div>
       <div className='see-all-btn-container'>
-      <button className='see-all-btn'>See All Cities</button>
+      <Link to='/see-all-cities' element={SeeAllCitiesPage} button className='see-all-btn' >See All Cities</Link>
       </div>
 
 <div className='compare-box-container'>

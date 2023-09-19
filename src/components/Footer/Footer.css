@@ -11,6 +11,11 @@
     border-radius: 5px;
     border: none;
     padding: 10px;
+    color: black;
+
+}
+
+.social-input::placeholder{
     color: #CED3D8;
 }
 
