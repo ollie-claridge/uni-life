@@ -1,6 +1,7 @@
 import {React, useEffect} from 'react'
 import './CityDetailsPage.css'
 import axios from 'axios'
+import { useParams } from 'react-router-dom'
 
 
 
@@ -8,6 +9,7 @@ import axios from 'axios'
 
 
 function CityDetailsPage() {
+  const {cityId} = useParams();
 
     // const [houseInfo, setHouseInfo] = useState([])
 
@@ -15,7 +17,7 @@ function CityDetailsPage() {
 
         ()=>{
           console.log ('axios working')
-          axios.get(`https://unilife-server.herokuapp.com/`)
+          axios.get(`https://unilife-server.herokuapp.com/cities/${cityId}`)
           .then(res => {
             console.log(res.data.response)
           //storing the data in state
@@ -26,8 +28,11 @@ function CityDetailsPage() {
     
     )
     
+    console.log(cityId)
 
   return (
+
+    
     <div className='CityDetailsPage'>
     <div className='main'>
     <div className='title'>

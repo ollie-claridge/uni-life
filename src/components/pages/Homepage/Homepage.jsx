@@ -10,6 +10,8 @@ function Homepage() {
 
   const [cities, setCities] = useState([])
 
+  const [citiesList, setCitiesList] = useState([])
+
   useEffect(
 
     ()=>{
@@ -27,7 +29,7 @@ function Homepage() {
     }, []
 
   )
-
+  
 
   return (
   <div className='background-image'>

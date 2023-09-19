@@ -10,9 +10,10 @@ import contactUs from '../assets/contact-us.png'
 
 const customStyles = {
 content: {
-top: 200,
+top: 100,
 right: 'auto' ,
 bottom: 'auto' ,
+height: 'auto',
 
 },}
 

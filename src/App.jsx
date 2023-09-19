@@ -12,9 +12,6 @@ import CityDetailsPage from './components/pages/Homepage/CityDetailsPage/CityDet
 
 function App() {
 
-  const apiKey=""
-  const baseURL="https://unilife-server.herokuapp.com/cities"
-
   return (
     
       
@@ -23,12 +20,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/see-all-cities' element={<SeeAllCitiesPage />} />
-          <Route path='/city-details' element={<CityDetailsPage/>} />
+          <Route path='/city-details/:cityId' element={<CityDetailsPage/>} />
+          <Route path='*' element={<Homepage />} />
         </Routes>
         <Footer/>
-        </BrowserRouter>
-      
-    
+        </BrowserRouter>  
   )
 }
 

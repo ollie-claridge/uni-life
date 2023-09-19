@@ -39,7 +39,7 @@ margin-left: 20px;
   }
   
   form input,
-  form textarea { 
+  form textarea, select { 
     width: 95%;
     padding: 10px;
     border: none;

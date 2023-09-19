@@ -4,12 +4,6 @@ import axios from 'axios'
 
 function CityCard({city}) {
 
-  const CityCardStyles = {
-    backgroundImage: (city.image_url)
-    
-  }
-
-
   const [cityDetails, setCityDetails] = useState()
 
   useEffect(
@@ -20,7 +14,7 @@ function CityCard({city}) {
       .then(res => {
         console.log(res.data.response)
       //storing the data in state
-      setCities(res.data.response)
+      setCityDetails(res.data.response)
       })
   
       .catch(err => console.log(err))
@@ -30,9 +24,11 @@ function CityCard({city}) {
 
 
   return (
-    <div style={CityCardStyles} className='city-card'>
+    <div className='city-card'>
+      <div className='img-blur'>
+        <img src  = {city.image_url} alt="city" className='city-card-image'/>
+        </div>
         <div className='city-card-text'>
-        {/* <img src  = {city.image_url} alt="city" className='city-card-image'/> */}
         <h2> {city.name}</h2>
         <p>{city.property_count} properties</p>
         </div>

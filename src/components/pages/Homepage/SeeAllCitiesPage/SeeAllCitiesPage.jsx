@@ -36,14 +36,14 @@ function SeeAllCitiesPage() {
          <h1 className='title2'>Search by City</h1>
       </div>
                <div className='city-names-container'>
-                <div className='hello'>
+             
             {
             //  cityNames.map(item => <p key={item.id}>{item.name}</p>)
             cityNames.map(item => <CityNameCard key={item.id} cityName={item}/>
             )}
          </div>
          </div>
-    </div>
+    
   )
 }
 

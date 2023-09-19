@@ -11,7 +11,7 @@ function Slider() {
 
     ()=>{
       console.log ('axios working')
-      axios.get(`https://unilife-server.herokuapp.com/cities?limit=9`)
+      axios.get(`https://unilife-server.herokuapp.com/cities?`)
       .then(res => {
         console.log(res.data.response)
       //storing the data in state
@@ -37,10 +37,10 @@ function Slider() {
         <div className='search-city-bubble'>
           <div className='search-input-container'>
 
-        <select >
+        <select className='search-city-bar'>
 
             {cityDropDown?cityDropDown.map((cityDropDown => {
-            return <option className='search-city-bar' key={cityDropDown.id} value={cityDropDown.id}>{cityDropDown.name}</option>}))
+            return <option  key={cityDropDown.id} value={cityDropDown.id}>{cityDropDown.name}</option>}))
         
            : null }
 
