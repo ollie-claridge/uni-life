@@ -159,14 +159,16 @@
     cursor: pointer;
 }
 
-.right-side{
-    background-color: green;
-}
 
 .indo-pic-container{
     display: flex;
+    padding-bottom: 30px;
 }
 
+.phone-man{
+    width: auto;
+    height: 300px;
+}
 
 
 

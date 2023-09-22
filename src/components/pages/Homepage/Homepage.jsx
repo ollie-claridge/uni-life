@@ -5,6 +5,11 @@ import axios from 'axios'
 import CityCard from '../../city-card/CityCard'
 import SeeAllCitiesPage from './SeeAllCitiesPage/SeeAllCitiesPage'
 import Slider from '../../Slider/Slider'
+import man from '../../../assets/Rectangle6.png'
+import bill from '../../../assets/bill.png'
+import heart from '../../../assets/heart.png'
+import earth from '../../../assets/magna-earth.png'
+import ticCross from '../../../assets/tic-cross.png'
 
 function Homepage() {
 
@@ -53,16 +58,25 @@ function Homepage() {
         <div className='compare-box-grid'>
           
         <div className='seach-section'>
+          
+          <img src ={earth}></img>
 
           <p>Find your dream home in the perfect area your university.</p>
+
         </div>
         <div className='compare-section'>
 
+        <img src ={ticCross}></img>
+
           <p>Come student accomodation to find a right home for you.</p>
+
         </div>
         <div className='bills-section'>
 
+        <img src ={bill}></img>
+
           <p>Bills are included in all rent prices. No hidden fees</p>
+
         </div>
 </div>
 
@@ -80,7 +94,7 @@ function Homepage() {
           <button className='SC-btn'>Search and Compare</button>
           </div>
           <div className='right-side'>
-          <h1>12345678</h1>
+          <img src ={man}/>
           
          </div>  
       </div>

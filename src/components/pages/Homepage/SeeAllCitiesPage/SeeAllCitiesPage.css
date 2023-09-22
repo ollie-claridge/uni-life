@@ -1,5 +1,6 @@
 .city-names-container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .backround-image{
@@ -16,6 +17,7 @@
     align-items: center;
     background-image: url(/src/assets/overlay.png);
     height: 400px;
+    color: white;
 }
 
 .secondTitle{
@@ -24,6 +26,12 @@
 }
 
 
+.title2{
+    margin-top: 50px;
+    margin-bottom: 100;
+    width: 20%;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -31,9 +39,6 @@
     justify-items: center;
 }
 
-.title h2{
-    font-size: 20px;
-}
 
 .search-city{
     border-radius: 10px;
@@ -77,12 +82,4 @@
 }
 
 
-.title{
-    color: white;
-}
-
-.title2{
-    margin-top: 50px;
-    margin-bottom: 100;
-}
 
