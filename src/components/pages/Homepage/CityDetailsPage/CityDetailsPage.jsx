@@ -77,9 +77,24 @@ function CityDetailsPage() {
         </select>
         </div>
 
+      <div className='homes-container'>
 
       </div>
 
+      <div className='city-info'>
+        <div className='info'>
+        <h1>Being a student in {}</h1>
+        <p> para </p>
+      </div>
+      <div className='info-pic-container'>
+        <img src='' className='info-pic'></img>
+      </div>
+      </div>
+
+
+      </div>
+
+    
 
     </div>
   )

@@ -10,6 +10,7 @@ import bill from '../../../assets/bill.png'
 import heart from '../../../assets/heart.png'
 import earth from '../../../assets/magna-earth.png'
 import ticCross from '../../../assets/tic-cross.png'
+import houseHand from '../../../assets/house-hand.png'
 
 function Homepage() {
 
@@ -23,7 +24,6 @@ function Homepage() {
       console.log ('axios working')
       axios.get(`https://unilife-server.herokuapp.com/cities?limit=9`)
       .then(res => {
-        console.log(res.data.response)
       //storing the data in state
       setCities(res.data.response)
       })
@@ -37,7 +37,7 @@ function Homepage() {
   
 
   return (
-  <div className='background-image'>
+  <div className='homepage'>
   <Slider/>
       <div className='city-options-box'>
 
@@ -57,7 +57,7 @@ function Homepage() {
         <h1>Comepare all inclusive student homes</h1>
         <div className='compare-box-grid'>
           
-        <div className='seach-section'>
+        <div className='compare-section'>
           
           <img src ={earth}></img>
 
@@ -71,7 +71,7 @@ function Homepage() {
           <p>Come student accomodation to find a right home for you.</p>
 
         </div>
-        <div className='bills-section'>
+        <div className='compare-section'>
 
         <img src ={bill}></img>
 
@@ -86,10 +86,10 @@ function Homepage() {
         </div>
            <div className='info-pic-container'>
             <div className='left-box'>
-              <h2 className='left-box-title'>Best selection</h2>
+              <h2 className='left-box-title'><img src  = {heart}className='hand-house'/>Best selection</h2>
                <p className='left-box-para'>Best selection of student accommodations. Never been easier to find a home that’s right for you.</p>
           
-          <h2 className='left-box-title'>Your favorite</h2>
+          <h2 className='left-box-title'><img src  = {houseHand}className='hand-house'/>Your favorite</h2>
           <p className='left-box-para'>Shortlist your favourite properties and send enquiries in one click.</p>
           <button className='SC-btn'>Search and Compare</button>
           </div>

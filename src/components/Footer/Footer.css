@@ -22,7 +22,19 @@
 .keep-in-touch{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: 30%;
+}
+
+.lets-socialize p{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.lets-socialize img{
+    padding-right: 15px;
 }
 
 
@@ -38,6 +50,7 @@
     padding: 30px;
     width: 50%;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .stamps{

@@ -25,6 +25,10 @@ margin-left: 20px;
     align-items: center;
 }
 
+.contact-btn{
+  background-color: #00A2E1;
+  border: none;
+}
 
 .modal-header {
     display: flex;

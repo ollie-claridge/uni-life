@@ -3,6 +3,8 @@
     width: 30%;
     color: black;
     justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .city-card-container{
@@ -10,10 +12,6 @@
 }
 
 .city-card-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     z-index: 2;
     text-align: center;
@@ -31,7 +29,7 @@
 
 .img-blur{
     width: 100%;
-    height: 100%;
+    height: 80%;
     filter: blur(1px);
     z-index: 0;
 }
