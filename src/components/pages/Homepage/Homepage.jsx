@@ -16,12 +16,10 @@ function Homepage() {
 
   const [cities, setCities] = useState([])
 
-  const [citiesList, setCitiesList] = useState([])
-
   useEffect(
 
     ()=>{
-      console.log ('axios working')
+
       axios.get(`https://unilife-server.herokuapp.com/cities?limit=9`)
       .then(res => {
       //storing the data in state

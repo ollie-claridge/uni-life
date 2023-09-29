@@ -11,7 +11,7 @@ function SeeAllCitiesPage() {
     useEffect(
 
         ()=>{
-            axios.get(`https://unilife-server.herokuapp.com/cities`)
+            axios.get(`https://unilife-server.herokuapp.com/properites/cities`)
             .then(res =>{console.log(res.data.response)
             setCityNames(res.data.response)})
             // setCityNames(res.data.response)

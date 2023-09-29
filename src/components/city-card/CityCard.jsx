@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './CityCard.css'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 function CityCard({city}) {
 
-  const [cityDetails, setCityDetails] = useState()
+  // const [cityDetails, setCityDetails] = useState()
 
   useEffect(
 
@@ -14,7 +15,7 @@ function CityCard({city}) {
       .then(res => {
         console.log(res.data.response)
       //storing the data in state
-      setCityDetails(res.data.response)
+      // setCityDetails(res.data.response)
       })
   
       .catch(err => console.log(err))
@@ -24,7 +25,7 @@ function CityCard({city}) {
 
 
   return (
-    <div className='city-card'>
+    <Link to={`/city-details/${city?._id}`} className='city-card'>
       <div className='img-blur'>
         <img src  = {city.image_url} alt="city" className='city-card-image'/>
         </div>
@@ -32,7 +33,7 @@ function CityCard({city}) {
         <h2> {city.name}</h2>
         <p>{city.property_count} properties</p>
         </div>
-    </div>
+    </Link>
   )
 }
 

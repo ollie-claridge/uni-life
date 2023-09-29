@@ -1,7 +1,8 @@
-import {React, useEffect} from 'react'
+import {React, useEffect, useState} from 'react'
 import './CityDetailsPage.css'
-import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import HomeCard from '../../../home-card/HomeCard'
+import axios from 'axios'
 
 
 
@@ -11,24 +12,25 @@ import { useParams } from 'react-router-dom'
 function CityDetailsPage() {
   const {cityId} = useParams();
 
-    // const [houseInfo, setHouseInfo] = useState([])
 
-    useEffect(
+  const [cityHomes, setCityHome] = useState([])
 
-        ()=>{
-          console.log ('axios working')
-          axios.get(`https://unilife-server.herokuapp.com/cities/${cityId}`)
-          .then(res => {
-            console.log(res.data.response)
-          //storing the data in state
-          })
+  useEffect(
+
+    ()=>{
+
+      axios.get(`https://unilife-server.herokuapp.com/properties/city/{city_id}`)
+      .then(res => {
+      //storing the data in state
+      console.log(res)
+      })
       
-          .catch(err => console.log(err))
-        }, []
-    
-    )
-    
-    console.log(cityId)
+   
+
+      .catch(err => console.log(err))
+    }, []
+
+  )
 
   return (
 
@@ -77,23 +79,27 @@ function CityDetailsPage() {
         </select>
         </div>
 
-      <div className='homes-container'>
+
 
       </div>
+
+      {/* <div className='homes-container'>
+      {cityHomes.map(item=><HomeCard 
+        key={item.id} 
+        city={item}/>)}
+      </div> */}
 
       <div className='city-info'>
         <div className='info'>
         <h1>Being a student in {}</h1>
         <p> para </p>
       </div>
+
+
       <div className='info-pic-container'>
         <img src='' className='info-pic'></img>
       </div>
       </div>
-
-
-      </div>
-
     
 
     </div>
