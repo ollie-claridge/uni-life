@@ -47,24 +47,25 @@ function Header() {
             <h2>Contact Us</h2>
             <p>Feel free to contact us if you have any questions. Looking forward to hear from you.</p>    
         </div>
-        <form>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" />
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" />
+        <form className='form-flex'>
+          
+          <div><label htmlFor="name">Name</label>
+          <input type="text" id="name" /></div>
+          <div><label htmlFor="email">Email</label>
+          <input type="email" id="email" /></div>
 
-        <label htmlFor="O">Are you are...?</label>
+        <div><label htmlFor="O">Are you are...?</label>
     <select id="occupation">
     <option value="Student">Student</option>
     <option value="Teacher">Teacher</option>
     <option value="Other">Other</option>
   </select>
-
+</div>
          
-          <label htmlFor="Phone Number">Phone number</label>
-          <input type="number" id="number" />
-          <label htmlFor="message">Message</label>
-          <textarea id="message" rows="4"></textarea>
+          <div><label htmlFor="Phone Number">Phone number</label>
+          <input type="number" id="number" /></div>
+          <div><label htmlFor="message">Message</label>
+          <textarea id="message" rows="4"></textarea></div>
           <button type="submit">Send</button>
         </form>
       </Modal>

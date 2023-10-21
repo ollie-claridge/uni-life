@@ -65,6 +65,7 @@
     border: 1px solid gray;
     height: 20px;
     border-radius: 5px;
+    color: black§§;
 }
 
 
@@ -202,4 +203,11 @@
     display: flex;
     flex-direction: column;
     width: 30%;
+}
+
+.row-feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }

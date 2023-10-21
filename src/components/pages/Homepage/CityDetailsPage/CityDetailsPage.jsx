@@ -3,6 +3,8 @@ import './CityDetailsPage.css'
 import { useParams } from 'react-router-dom'
 import HomeCard from '../../../home-card/HomeCard'
 import axios from 'axios'
+import students from '../../../../assets/students.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -15,22 +17,35 @@ function CityDetailsPage() {
 
   const [cityHomes, setCityHome] = useState([])
 
-  useEffect(
+  const [singleCity, setSingleCity] = useState()
 
-    ()=>{
-
-      axios.get(`https://unilife-server.herokuapp.com/properties/city/{city_id}`)
+  useEffect(() => {
+    axios.get(`https://unilife-server.herokuapp.com/cities/${cityId}`)
       .then(res => {
-      //storing the data in state
-      console.log(res)
+
+        setSingleCity(res.data);
       })
-      
-   
+      .catch(error => {
+        console.error(error);
+      });
+  }, [cityId]);
 
-      .catch(err => console.log(err))
-    }, []
 
-  )
+  useEffect(() => {
+    axios.get(`https://unilife-server.herokuapp.com/properties/city/${cityId}`)
+      .then(res => {
+        console.log(res.data)
+        setCityHome(res.data.response);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, [cityId]);
+
+  console.log(cityHomes)
+
+  console.log(singleCity)
+
 
   return (
 
@@ -50,11 +65,7 @@ function CityDetailsPage() {
         <div className='min-bed-box'>
             <h2>Min Bedroom</h2>
             <select placeholder='Any bedroom'>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+
             </select>
         </div>
 
@@ -68,7 +79,7 @@ function CityDetailsPage() {
         <div className='max-price'>
             <h2>Max Price</h2>
         <select placeholder='Any Price'>
-
+          
         </select>
         </div>
 
@@ -83,25 +94,26 @@ function CityDetailsPage() {
 
       </div>
 
-      {/* <div className='homes-container'>
-      {cityHomes.map(item=><HomeCard 
-        key={item.id} 
-        city={item}/>)}
-      </div> */}
+      <div className='homes-container'>
+       
+        {cityHomes.map(item => (
+           <Link to={`/home-details/${item._id}`}>
+          <HomeCard key={item._id} homes={item} />
+          </Link>
+        ))}
+      </div>
 
       <div className='city-info'>
         <div className='info'>
-        <h1>Being a student in {}</h1>
-        <p> para </p>
+        <h1>Being a student in {singleCity?.data[0].name}</h1>
+        <p> {singleCity?.data[0].student_life} </p>
       </div>
 
 
       <div className='info-pic-container'>
-        <img src='' className='info-pic'></img>
+        <img src={students} className='info-pic'></img>
       </div>
       </div>
-    
-
     </div>
   )
 }

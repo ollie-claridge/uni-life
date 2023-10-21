@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import './Homepage.css'
 import axios from 'axios'
 import CityCard from '../../city-card/CityCard'
-import SeeAllCitiesPage from './SeeAllCitiesPage/SeeAllCitiesPage'
 import Slider from '../../Slider/Slider'
 import man from '../../../assets/Rectangle6.png'
 import bill from '../../../assets/bill.png'
@@ -36,17 +35,16 @@ function Homepage() {
 
   return (
   <div className='homepage'>
-  <Slider/>
+  <Slider title="Find student homes with bills included" secondTitle="second title"/>
       <div className='city-options-box'>
 
-        {/* {cities.map(item=><p key={item.id}>{item.name}</p>)} */}
         {cities.map(item=><CityCard 
         key={item.id} 
         city={item}/>)
         }
       </div>
       <div className='see-all-btn-container'>
-      <Link to='/see-all-cities' element={SeeAllCitiesPage} button className='see-all-btn' >See All Cities</Link>
+      <Link to='/see-all-cities' className='see-all-btn' >See All Cities</Link>
       </div>
 
 <div className='compare-box-container'>
@@ -84,8 +82,13 @@ function Homepage() {
         </div>
            <div className='info-pic-container'>
             <div className='left-box'>
-              <h2 className='left-box-title'><img src  = {heart}className='hand-house'/>Best selection</h2>
-               <p className='left-box-para'>Best selection of student accommodations. Never been easier to find a home that’s right for you.</p>
+              <div className='row-feature'>
+                <img src  = {heart}/>
+                <div>
+                  <h2 className='left-box-title'>Best selection</h2>
+                  <p className='left-box-para'>Best selection of student accommodations. Never been easier to find a home that’s right for you.</p>
+                </div>
+              </div>
           
           <h2 className='left-box-title'><img src  = {houseHand}className='hand-house'/>Your favorite</h2>
           <p className='left-box-para'>Shortlist your favourite properties and send enquiries in one click.</p>

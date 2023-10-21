@@ -60,7 +60,7 @@ margin-left: 20px;
   }
   
   form button[type='submit'] {
-    background-color: var(--primary-bg);
+    background-color: blue;
     color: white;
     border: none;
     border-radius: 5px;
@@ -69,4 +69,14 @@ margin-left: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
   }
+
+  .form-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
   
+  .form-flex > * {
+    flex-basis: 50%;
+  }

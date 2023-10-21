@@ -33,3 +33,29 @@
 select{
     width: 100%;
 }
+
+.city-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.homes-container{
+    display: flex;
+    height: auto;
+    color: black;
+    justify-content: space-around;
+    gap: 5px;
+    flex-wrap: wrap;
+
+}
+
+.city-info{
+    background-color: #F6FAFD;
+    ;
+}
+
+.info-pic{
+    width: 100%;
+}
+

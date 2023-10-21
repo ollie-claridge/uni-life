@@ -1,0 +1,115 @@
+.HomeDetailsPage{
+    padding-inline: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.page-top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.photo-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-inline: 10px;
+}
+.main-picture{
+    border-radius: 10px;
+}
+
+.main-photo-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.other-photo-container{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-pictures{
+    display: flex;
+    border-radius: 10px;
+    margin: 5px;
+    width: 33%;
+
+}
+
+.home-stats{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-mid{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.desc{
+    display: flex;
+    justify-content: flex-start;
+    width: 35%;
+}
+
+.bed-price{
+    width: 50%;
+
+}
+
+.room-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px gray;
+    padding: 10px;
+
+}
+
+.room-row-bottom{
+    border: solid 1px gray;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.room-row-top{
+    border: solid 1px gray;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.address-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bedrooms{
+    display: flex;
+    flex-direction: column;
+}
+
+.bathrooms{
+    display: flex;
+    flex-direction: column;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+}

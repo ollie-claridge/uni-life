@@ -1,6 +1,8 @@
 .city-names-container{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    background-color: aquamarine;
 }
 
 .backround-image{

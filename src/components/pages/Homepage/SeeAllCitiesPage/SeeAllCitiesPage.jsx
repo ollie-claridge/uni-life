@@ -11,7 +11,7 @@ function SeeAllCitiesPage() {
     useEffect(
 
         ()=>{
-            axios.get(`https://unilife-server.herokuapp.com/properites/cities`)
+            axios.get(`https://unilife-server.herokuapp.com/cities`)
             .then(res =>{console.log(res.data.response)
             setCityNames(res.data.response)})
             // setCityNames(res.data.response)
@@ -38,6 +38,8 @@ function SeeAllCitiesPage() {
             {
             //  cityNames.map(item => <p key={item.id}>{item.name}</p>)
             cityNames.map(item => <CityNameCard key={item.id} cityName={item}/>
+            
+            
             )}
          </div>
          </div>

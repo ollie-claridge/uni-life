@@ -3,7 +3,7 @@ import './Slider.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-function Slider() {
+function Slider({title, secondTitle}) {
 
     const [cityDropDown, setCityDropDown] = useState([])
 
@@ -29,18 +29,18 @@ function Slider() {
     <div className='slider'>
     <form className='main'>
     <div className='title'>
-              <h1 className='Title'>Find student homes with bills included</h1>
-              <h2 className='secondTitle'>A simple and faster way to find student accomodation</h2>
-    
-
-      <form className='search-city'>
+              <h1 className='Title'>{title}</h1>
+              <h2 className='secondTitle'>{secondTitle}</h2>
+    {/* Find student homes with bills included */}
+{/* A simple and faster way to find student accomodation */}
+      <div className='search-city'>
         <div className='search-city-bubble'>
           <div className='search-input-container'>
 
         <select className='search-city-bar'>
 
-            {cityDropDown?cityDropDown.map((cityDropDown => {
-            return <option  key={cityDropDown.id} value={cityDropDown.id}>{cityDropDown.name}</option>}))
+            {cityDropDown?cityDropDown.map(((cityDropDown, index) => {
+            return <option key={index} value={cityDropDown.id}>{cityDropDown.name}</option>}))
         
            : null }
 
@@ -51,10 +51,9 @@ function Slider() {
         <button className='search-city-btn'>Find Homes</button>
         </div>
         </div>
-        </form>
+        </div>
        
         </div>
-         <h1 className='title2'>Student accomodation in our top cities</h1>
 
     </form>
     </div>
