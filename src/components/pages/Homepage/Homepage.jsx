@@ -89,6 +89,9 @@ function Homepage() {
                   <p className='left-box-para'>Best selection of student accommodations. Never been easier to find a home that’s right for you.</p>
                 </div>
               </div>
+          <div className="row-feture">
+            
+          </div>
           
           <h2 className='left-box-title'><img src  = {houseHand}className='hand-house'/>Your favorite</h2>
           <p className='left-box-para'>Shortlist your favourite properties and send enquiries in one click.</p>
