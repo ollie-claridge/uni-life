@@ -35,7 +35,7 @@ function Homepage() {
 
   return (
   <div className='homepage'>
-  <Slider title="Find student homes with bills included" secondTitle="second title"/>
+  <Slider title="Find student homes with bills included" secondTitle="A simple and faster way to search for student accommodation"/>
       <div className='city-options-box'>
 
         {cities.map(item=><CityCard 

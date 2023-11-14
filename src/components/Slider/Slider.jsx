@@ -31,8 +31,6 @@ function Slider({title, secondTitle}) {
     <div className='title'>
               <h1 className='Title'>{title}</h1>
               <h2 className='secondTitle'>{secondTitle}</h2>
-    {/* Find student homes with bills included */}
-{/* A simple and faster way to find student accomodation */}
       <div className='search-city'>
         <div className='search-city-bubble'>
           <div className='search-input-container'>

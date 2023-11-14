@@ -89,6 +89,11 @@
 
 }
 
+.home-stats{
+    width: 100%;
+    
+}
+
 .address-box{
     display: flex;
     justify-content: space-around;
@@ -102,6 +107,7 @@
 .bedrooms{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .bathrooms{
@@ -112,4 +118,8 @@
 .price{
     display: flex;
     flex-direction: column;
+}
+
+.desc p{
+    font-size: 25px;
 }

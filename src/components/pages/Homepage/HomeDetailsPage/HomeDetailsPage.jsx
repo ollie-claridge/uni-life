@@ -56,7 +56,7 @@ function HomeDetailsPage() {
 </div>
 <div className='prop-type'>
 <h3>Property type</h3>
-<p>{singleHome?.rent}</p>
+<p>{singleHome?.property_type}</p>
 
 </div>
       </div>

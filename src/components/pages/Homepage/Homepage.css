@@ -34,19 +34,15 @@
     width: 100%;
 }
 
-.search-input-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-}
-
+/* 
 .search-city-bubble{
     padding: 10px;
     border-radius: 10px;
     background-color: white;
+    display: flex;
+    align-items: center;
     
-}
+} */
 
 .search-city-btn{
     margin-left: 10px;
@@ -65,7 +61,7 @@
     border: 1px solid gray;
     height: 20px;
     border-radius: 5px;
-    color: black§§;
+    color: black;
 }
 
 
@@ -82,6 +78,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     height: 900px;
+    padding-top: 10px;
     
 }
 

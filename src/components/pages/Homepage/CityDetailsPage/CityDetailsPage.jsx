@@ -5,6 +5,7 @@ import HomeCard from '../../../home-card/HomeCard'
 import axios from 'axios'
 import students from '../../../../assets/students.png'
 import { Link } from 'react-router-dom'
+import Slider from '../../../Slider/Slider'
 
 
 
