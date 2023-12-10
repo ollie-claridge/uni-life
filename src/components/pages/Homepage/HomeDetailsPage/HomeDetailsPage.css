@@ -79,6 +79,11 @@
 
 }
 
+.home-address{
+    font-size: 32px;
+    font-weight: 400;
+}
+
 .room-row-top{
     border: solid 1px gray;
     border-radius: 10px 10px 0px 0px;
@@ -91,7 +96,20 @@
 
 .home-stats{
     width: 100%;
+    padding-left: 20px;
+    height: auto;
     
+}
+
+.home-stats-border{
+    border: 1px gray solid;
+    padding-right: 40px;
+    border-radius: 7px;
+}
+
+.home-description{
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .address-box{
@@ -104,20 +122,47 @@
     justify-content: space-around;
 }
 
+.row2{
+    display: flex;
+    justify-content: space-around;
+}
+
 .bedrooms{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.bathrooms{
+.stat-box{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-content: center;
 }
 
 .price{
     display: flex;
     flex-direction: column;
+    
+    
+}
+
+.stats-btns{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.shortlist-btn{
+    width: 49%;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.booking-btn{
+    width: 49%;
+    height: 35px;
+    border-radius: 10px;
 }
 
 .desc p{

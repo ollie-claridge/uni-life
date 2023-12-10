@@ -37,41 +37,64 @@ function HomeDetailsPage() {
                   
 
       </div>
+      <div className="home-stats-border">
       <div className='home-stats'>
      <div className='address-box'>
-<h2>{singleHome?.address.street},</h2>
-<h2>{singleHome?.address.city},</h2>
-<h2>{singleHome?.address.postcode}</h2>
+<h2 className='home-address'>{singleHome?.address.street},</h2>
+<h2 className='home-address'>{singleHome?.address.city},</h2>
+<h2 className='home-address'>{singleHome?.address.postcode}</h2>
     </div>
     <div className='info-points'>
       <div className='row1'>
-<div className='bedrooms'>
+<div className='stat-box'>
 <h3>Bedrooms</h3>
 <p>{singleHome?.bedroom_count}</p>
 </div>
-<div className='bathrooms'>
+<div className='stat-box'>
 <h3>Bathrooms</h3>
 <p>{singleHome?.bathroom_count}</p>
 
 </div>
-<div className='prop-type'>
+<div className='stat-box'>
 <h3>Property type</h3>
 <p>{singleHome?.property_type}</p>
 
 </div>
       </div>
-      <div className='row2'>
-<div className='price'>
 
+
+      <div className='row2'>
+<div className='stat-box'>
+  <h3>Price</h3>
+<p>{singleHome?.bedroom_prices.bedroom_one}</p>
 </div>
-      </div>
+    <div className="stat-box">
+      <h3>Furnished Type</h3>
+<p>{singleHome?.furnished}</p>
     </div>
-      </div>
-      </div>
+    <div className="stat-box">
+      <h3>Availabilty</h3>
+<p>{singleHome?.availability}</p>
+</div>
+</div>
+    
+    
+    </div>
+      
+    <div className="stats-btns">
+  <button className='shortlist-btn'>Shortlist</button>
+  <button className='booking-btn'>Book Viewing</button>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+
       <div className='page-mid'>
         <dic className='desc'>
                   <h1>Description
-                    <p>{singleHome?.property_description}</p>
+                    <p className='home-description'>{singleHome?.property_description}</p>
                   </h1>
                  
         </dic>
