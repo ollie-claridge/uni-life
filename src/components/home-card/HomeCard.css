@@ -14,15 +14,25 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    align-content: center;
     background-color:#3A5295;
     color: white;
 }
 
 .bed-and-bath{
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bath-icon{
+    display: flex;
+}
+
+.bed-icon{
+    display: flex;
 }
 
 .home-content{

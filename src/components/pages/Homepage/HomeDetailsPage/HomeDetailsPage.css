@@ -33,8 +33,8 @@
 .other-pictures{
     display: flex;
     border-radius: 10px;
-    margin: 5px;
     width: 33%;
+    padding: 2px;
 
 }
 
@@ -70,7 +70,7 @@
 }
 
 .room-row-bottom{
-    border: solid 1px gray;
+    border: solid 1px #CED3D8;
     border-radius: 0px 0px 10px 10px;
     display: flex;
     justify-content: space-between;
@@ -85,7 +85,7 @@
 }
 
 .room-row-top{
-    border: solid 1px gray;
+    border: solid 1px #CED3D8;
     border-radius: 10px 10px 0px 0px;
     display: flex;
     justify-content: space-between;
@@ -98,13 +98,15 @@
     width: 100%;
     padding-left: 20px;
     height: auto;
+    display: flex;
     
 }
 
 .home-stats-border{
-    border: 1px gray solid;
+    border: 1px #CED3D8 solid;
     padding-right: 40px;
     border-radius: 7px;
+    height: 370px;
 }
 
 .home-description{
@@ -115,6 +117,7 @@
 .address-box{
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px #CED3D8 solid;
 }
 
 .row1{
@@ -157,12 +160,21 @@
     width: 49%;
     height: 35px;
     border-radius: 10px;
+    color: #3A5295;
+    border: none;
 }
 
 .booking-btn{
     width: 49%;
     height: 35px;
     border-radius: 10px;
+    background-color: #3A5295;
+    color: white;
+    border: #CED3D8;
+}
+
+.Key-F{
+    margin-left: 50px;
 }
 
 .desc p{

@@ -2,6 +2,7 @@ import {React, useEffect, useState} from 'react'
 import './HomeDetailsPage.css'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import tick from '../../../../assets/Tick.png'
 
 function HomeDetailsPage() {
 
@@ -122,12 +123,11 @@ function HomeDetailsPage() {
       </div>
         <div className='Key-F'>
           <h1>Key Features</h1>
-          <p>{singleHome?.key_features[0]}</p>
-          <p>{singleHome?.key_features[1]}</p>
-          <p>{singleHome?.key_features[2]}</p>
-          <p>{singleHome?.key_features[3]}</p>
-          <p>{singleHome?.key_features[4]}</p>
-          <p>{singleHome?.key_features[5]}</p>
+          <p><img src={tick}/> {singleHome?.key_features[0]}</p>
+          <p><img src={tick}/> {singleHome?.key_features[1]}</p>
+          <p><img src={tick}/> {singleHome?.key_features[2]}</p>
+          <p><img src={tick}/> {singleHome?.key_features[3]}</p>
+          <p><img src={tick}/> {singleHome?.key_features[4]}</p>
         </div>
     </div>
   )

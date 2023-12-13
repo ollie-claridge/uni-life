@@ -1,5 +1,7 @@
 import {React} from 'react'
 import './HomeCard.css'
+import bedIcon from '../../assets/bed-icon.png'
+import bathIcon from '../../assets/bath-icon.png'
 
 function HomeCard({homes}) {
 
@@ -13,8 +15,13 @@ function HomeCard({homes}) {
       <p>£{homes?.bedroom_prices.bedroom_one}</p>
       </div>
       <div className='bed-and-bath'>
-        <p>{homes.bedroom_count}</p>
-        <p>{homes.bathroom_count}</p>
+        <div className="bed-icon">
+        <p><img src ={bedIcon}></img>{homes.bedroom_count}</p>
+        </div>
+        <div className="bath-icon">
+          <p><img src ={bathIcon}></img>{homes.bathroom_count}</p>
+        </div>
+        
       </div>
         </div>
             <div className='home-content'>
