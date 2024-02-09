@@ -83,19 +83,23 @@ function Homepage() {
            <div className='info-pic-container'>
             <div className='left-box'>
               <div className='row-feature'>
-                <img src  = {heart}/>
+                <img src  = {heart} className='compare-icon'/>
                 <div>
                   <h2 className='left-box-title'>Best selection</h2>
                   <p className='left-box-para'>Best selection of student accommodations. Never been easier to find a home that’s right for you.</p>
                 </div>
               </div>
-          <div className="row-feture">
-            
-          </div>
-          
-          <h2 className='left-box-title'><img src  = {houseHand}className='hand-house'/>Your favorite</h2>
+          <div className="row-feature">
+            <img src  = {houseHand}className='compare-icon'/>
+            <div className="">
+            <h2 className='left-box-title'>Your favorite</h2>
           <p className='left-box-para'>Shortlist your favourite properties and send enquiries in one click.</p>
-          <button className='SC-btn'>Search and Compare</button>
+            </div>
+
+          </div>
+                    <button className='SC-btn'>Search and Compare</button>
+
+         
           </div>
           <div className='right-side'>
           <img src ={man}/>
