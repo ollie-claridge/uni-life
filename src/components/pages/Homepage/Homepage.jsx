@@ -69,7 +69,7 @@ function Homepage() {
         </div>
         <div className='compare-section'>
 
-        
+        <img src={bill}></img>
 
           <p>Bills are included in all rent prices. No hidden fees</p>
 

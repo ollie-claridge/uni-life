@@ -1,61 +1,67 @@
-.title{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/src/assets/overlay.png);
-    height: 400px;
+.title {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/src/assets/overlay.png);
+  height: 400px;
 }
 
-.secondTitle{
-    font-weight: 300;
+.secondTitle {
+  font-weight: 300;
 }
 
-
-.main{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-items: center;
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
 }
 
-.title h2{
-    font-size: 20px;
+.title h2 {
+  font-size: 20px;
 }
 
-
-.house-stats-box{
-    display: flex;
-    justify-content: space-around;
+.house-stats-box {
+  display: flex;
+  justify-content: space-around;
 }
 
-select{
-    width: 100%;
+select {
+  width: 100%;
 }
 
-.city-info{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+.city-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.homes-container{
-    display: flex;
-    height: auto;
-    color: black;
-    justify-content: space-around;
-    gap: 5px;
-    flex-wrap: wrap;
-
+.homes-container {
+  display: flex;
+  height: auto;
+  color: black;
+  justify-content: space-around;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
-.city-info{
-    background-color: #F6FAFD;
-    ;
+.bed-and-bath {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.info-pic{
-    width: 100%;
+.city-info {
+  background-color: #f6fafd;
 }
 
+.info-pic {
+  width: 30em;
+  height: auto;
+}
+
+.info-para {
+  font-size: 1.8em;
+}

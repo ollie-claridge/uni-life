@@ -1,58 +1,61 @@
-.home-card{
-    width: 300px;
-    height: auto;
+.home-card {
+  width: 300px;
+  height: auto;
 }
 
-.home-card-image{
-    border-radius: 25px;
-    z-index: -2;
+.home-card-image {
+  border-radius: 25px;
+  z-index: -2;
 }
 
-
-
-.number-box{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    background-color:#3A5295;
-    color: white;
+.number-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: #3a5295;
+  color: white;
 }
 
-.bed-and-bath{
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.bed-and-bath {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.bath-icon{
-    display: flex;
+.bath-icon {
+  display: flex;
 }
 
-.bed-icon{
-    display: flex;
+.bed-icon {
+  display: flex;
 }
 
-.home-content{
-    display: flex;
-    justify-content: space-around;
+.home-content {
+  display: flex;
+  justify-content: space-around;
 }
 
-.address{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.address {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.view-home-btn{
-    width: 100%;
-    border-top: solid #CED3D8 1px;
-    text-align: center;
+.view-home-btn {
+  width: 100%;
+  border-top: solid #ced3d8 1px;
+  text-align: center;
 }
 
-.view-btn{
-    margin: 10px;
-    cursor: pointer;
+.view-btn {
+  margin: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  background-color: #3a5295;
+  color: white;
 }
