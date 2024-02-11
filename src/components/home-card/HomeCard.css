@@ -1,6 +1,9 @@
 .home-card {
   width: 300px;
   height: auto;
+  border: solid 1px rgb(188, 188, 188);
+  border-radius: 25px;
+  margin: 5px;
 }
 
 .home-card-image {
